@@ -1,0 +1,168 @@
+body, .container {
+  background: #21232E;
+  margin: 0 auto;
+  width: 1300px; }
+
+.container {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+header {
+  font-family: 'Hind', sans-serif;
+  background-image: url(../img/m-h-night.jpg);
+  background-size: cover;
+  background-origin: content-box;
+  height: 800px;
+  width: 100%;
+  border-radius: 0 0 27%;
+  color: white; }
+  header .header-wrap {
+    position: absolute;
+    margin: 30px 100px 30px 100px;
+    opacity: 1;
+    height: 700px; }
+  header .header_heading {
+    font-size: 400%;
+    font-weight: bolder;
+    width: 700px;
+    line-height: 1; }
+  header .header_text {
+    width: 600px;
+    white-space: pre;
+    margin-left: -55px;
+    line-height: 1.4;
+    font-size: 100%;
+    opacity: 0.9; }
+  header .landing-logo {
+    display: flex; }
+    header .landing-logo img {
+      height: 50px;
+      width: 50px; }
+    header .landing-logo p {
+      margin-left: 0;
+      margin-top: 0;
+      font-size: 160%;
+      font-weight: bold;
+      text-align: center; }
+    header .landing-logo span {
+      display: block;
+      width: 100px;
+      font-size: 40%;
+      margin-top: -10px; }
+  header button {
+    height: 50px;
+    width: 150px;
+    border: none;
+    background-color: #E3AC00;
+    border-radius: 0;
+    color: antiquewhite;
+    font-size: 120%;
+    margin-top: 30px; }
+
+main {
+  font-family: 'Hind', sans-serif;
+  margin: 0 auto;
+  width: 100%; }
+  main .section_text {
+    text-align: center;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+    line-height: 1; }
+  main .section_card_wrap {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 200px 0 200px; }
+    main .section_card_wrap .section_card {
+      align-content: center;
+      background-color: #3B3F50;
+      text-align: center;
+      padding: 10px;
+      width: 250px; }
+      main .section_card_wrap .section_card .section_card_img {
+        border-radius: 5px; }
+      main .section_card_wrap .section_card .section_card_heading {
+        color: antiquewhite;
+        width: 250px;
+        font-size: 130%;
+        line-height: 1; }
+      main .section_card_wrap .section_card .section_card_text {
+        color: antiquewhite;
+        width: 250px;
+        font-size: 65%; }
+  main .section_banner {
+    background: linear-gradient(90deg, #DB9F09, #99374C);
+    width: 60%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: -60px;
+    border-radius: 5px; }
+  main .section_banner_text_wrap {
+    margin-left: 100px; }
+  main .section_banner_heading {
+    font-size: 150%;
+    font-weight: bolder;
+    color: white;
+    line-height: 1;
+    margin-top: 25px; }
+  main .section_banner_text {
+    color: antiquewhite;
+    margin-top: -5px; }
+  main .section_banner_button {
+    height: 40px;
+    width: 140px;
+    background-color: #E3AC00;
+    border-radius: 5px;
+    border: none;
+    color: antiquewhite;
+    font-size: 120%;
+    margin: auto; }
+
+span.specific_underline {
+  box-shadow: #FF4E33 0px -0.4em inset;
+  display: inline-block; }
+
+span.specific_underline {
+  display: inline-block; }
+
+footer {
+  background-color: #3B3F50;
+  height: 200px;
+  font-family: 'Hind', sans-serif;
+  color: #C0C3CE;
+  padding-top: 70px; }
+  footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer div .footer_logo.landing-logo {
+      align-content: space-around;
+      margin-right: 250px; }
+      footer div .footer_logo.landing-logo img {
+        height: 50px;
+        width: 50px;
+        padding: 10%; }
+      footer div .footer_logo.landing-logo p {
+        position: relative;
+        font-size: 160%;
+        font-weight: bold;
+        text-align: center; }
+      footer div .footer_logo.landing-logo span {
+        display: block;
+        font-size: 40%;
+        margin-top: -10px; }
+  footer .footer-wrap {
+    margin-top: 30px; }
+  footer .footer_text {
+    height: auto;
+    white-space: pre-line;
+    width: 20%;
+    font-size: 80%; }
+  footer .footer-cr {
+    margin-left: 200px;
+    font-size: 80%; }
