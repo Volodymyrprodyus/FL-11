@@ -1,9 +1,9 @@
-let a11 = prompt('Enter a1 (x coordinate) of point A');
-let a22 = prompt('Enter a2 (y coordinate) of point A');
-let b11 = prompt('Enter b1 (x coordinate) of point B');
-let b22 = prompt('Enter b2 (y coordinate) of point B');
-let c11 = prompt('Enter c1 (x coordinate) of point C');
-let c22 = prompt('Enter c2 (y coordinate) of point C');
+let a11 = prompt('Enter a1 (x coordinate) of point A', 0);
+let a22 = prompt('Enter a2 (y coordinate) of point A', 0);
+let b11 = prompt('Enter b1 (x coordinate) of point B', 0);
+let b22 = prompt('Enter b2 (y coordinate) of point B', 0);
+let c11 = prompt('Enter c1 (x coordinate) of point C', 0);
+let c22 = prompt('Enter c2 (y coordinate) of point C', 0);
 let a1 = parseFloat(a11);
 let a2 = parseFloat(a22);
 let b1 = parseFloat(b11);
