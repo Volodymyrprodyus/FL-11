@@ -1,6 +1,6 @@
-let a1 = prompt('Enter the length of the first side of the triangle');
-let b1 = prompt('Enter the length of the second side of the triangle');
-let c1 = prompt('Enter the length of the third side of the triangle');
+let a1 = prompt('Enter the length of the first side of the triangle', 0);
+let b1 = prompt('Enter the length of the second side of the triangle', 0);
+let c1 = prompt('Enter the length of the third side of the triangle', 0);
 let a = parseFloat(a1);
 let b = parseFloat(b1);
 let c = parseFloat(c1); 
