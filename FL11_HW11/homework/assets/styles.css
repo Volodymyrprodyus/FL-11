@@ -1,0 +1,96 @@
+body {
+    width: 100%;
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-action {
+    display:flex;
+    justify-content: space-between;
+}
+
+#action-input-text {
+    width: 90%;
+    height: 30px;
+}
+
+#header-text {
+    text-align: center;
+    color: dodgerblue;
+    font-weight: bolder;
+}
+
+hr {
+    height: 5px;
+    background-color: #F7FBFF;
+    border-color: #ECEDEF;
+}
+
+ul {
+    padding: 0;
+    color: dodgerblue;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 5px;
+    border-bottom: 0;
+    cursor: pointer;
+}
+
+.li-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+#inputRename {
+    height: 25px;
+}
+
+.editBtn {
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    color: #89C4F4;
+}
+
+.deletebtn {
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+    color: #89C4F4;
+}
+
+.saveBtn {
+    margin-left: 15px;
+    background-color: transparent;
+    border: none;
+    color: #89C4F4;
+}
+
+.input2 {
+    transform:scale(3);
+}
+
+.labelinput2 {
+    margin-left: 20px; 
+}
+
+.no-display {
+    display: none;
+}
+
+.edit-mode {
+    display: unset;
+}
