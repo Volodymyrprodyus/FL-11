@@ -1,0 +1,159 @@
+.container{
+  display: block;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+form{
+  width: 200px;
+  margin: 20px auto;
+}
+
+#posts_container {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(46, 44, 44);
+  color: aliceblue;
+  position: fixed;
+  align-items: left;
+  width: 50%;
+  overflow:scroll;
+  height:45%;
+  left: 45%;
+  top: 55%;
+}
+
+#results_posts, #results_comments {
+  width: 42%;
+  font: 400 13.3333px Arial;
+  padding: 3%;
+}
+
+.user{
+  display: flex;
+  width: 400px;
+  height: auto; 
+  background: rgb(46, 44, 44);
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 5px;
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+  padding: 0;
+  color: aliceblue;
+}
+
+#spinner:not([hidden]) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 5px solid #f25a41;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.remove_button {
+  position: relative;
+  top: 15px;
+  left: 145px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.edit_button {
+  position: relative;
+  bottom: 65px;
+  left: 145px;
+  font-weight: bold;
+  cursor: pointer;
+}
+ 
+.save_button{
+  position: relative;
+  bottom: 145px;
+  left: 145px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save_button:hover, .edit_button:hover, .remove_button:hover {
+  background: #fdfdfd;
+}
+
+#name, #userName {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.inputName {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 8px 16px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.inputUserName {
+  padding: 8px 16px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  width: 100%;
+  background: rgb(46, 44, 44);
+  color: aliceblue;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover{
+  opacity: 0.8;
+}
+
+label{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.image_avatar {
+  padding-top: 3%;
+  border-radius: 15%;
+}
+
+

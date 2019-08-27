@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./material-icons/material-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ajax</title>
+</head>
+<body>
+    <form>
+        <label>Name
+        <input id="name" type="text" autocomplete="off" placeholder="Your name">
+        </label>
+        <label>Username
+        <input id="userName" type="text" placeholder="Your username">
+        </label>
+        <button id="create_user" type="button" class="button">Create user</button>
+        <button id="load_users" type="button" class="button">Load users</button>
+    </form>
+    <div hidden id="spinner"></div>
+    <div id='user_cards' class="container"></div>
+    <div id="posts_container">
+        <div id='results_posts'></div>
+        <div id='results_comments'></div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
