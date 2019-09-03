@@ -1,0 +1,1 @@
+export {Titles} from './titles.component.js';
