@@ -1,0 +1,58 @@
+.myEmoji {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 15px;
+    width: 500px;
+    // margin: 0 auto;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.myLogo {
+    font-size: 40px;
+}
+.myLogoItem {
+    background-color: rgb(243, 241, 241);
+    width: 150px;
+    height: 180px;
+    margin: 1%;
+}
+
+.myIncludes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.myTitles {
+    justify-content: flex-start;
+    width: 400px;
+    background-color: rgb(240, 240, 231);
+    padding: 2%;
+    margin-right: 2%;
+}
+
+.myBusket {
+    justify-content: flex-start;
+    width: 25%;
+    background-color: rgb(240, 240, 231);
+    padding: 1%;
+    height: 80px;
+}
+
+.myHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.headerButton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.includesText {
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+}
