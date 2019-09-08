@@ -1,0 +1,53 @@
+<div class="container">
+
+  <div class="header">
+    <div class="header_top_text">{{ selectedCategory | uppercase }}</div>
+    <div class="header_bottom">
+      <div class="header_bottom_select">
+            <select (change)="onChange($event.target.value)" [(ngModel)]="searchCategory">
+              <option *ngFor="let arr of myArr" >{{arr.category}}</option>
+            </select>
+      </div>
+
+
+      <div class="header_bottom_input_filter">
+        <div class="header_bottom_input">
+            <input type="text" placeholder="Type news category..." [(ngModel)]="searchCategory">
+            
+        </div>
+        <div class="header_bottom_filter">
+            <button (click)="addArticleMethod">Filter</button>
+        </div>
+      </div>
+
+
+      <div class="header_bottom_add_button">
+          <button >Add Article</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <app-soursename></app-soursename> -->
+  <!-- <app-newsline [selectCategory]='category'></app-newsline> -->
+
+  <ul>
+      <li *ngFor="let arr of myArr | search:searchCategory">
+            <div class="newsline">
+              <img class="img_news" src="{{ arr.photo }}">
+              <div class="newsline_desc">
+                <strong>{{ arr.title | uppercase }}</strong>
+                <p class="descr" appShadow>{{ arr.desc }}</p>
+              </div>
+            </div>
+            <a [routerLink]="'/'" (click)="seeMore()">See more...</a>
+      </li>
+  </ul>
+
+
+  <router-outlet></router-outlet>
+
+  </div>
+
+
+  
