@@ -1,0 +1,94 @@
+<div class="container">
+
+  <div class="header">
+    <div class="header_top_text">{{ selectedCategory | uppercase }}</div>
+    <div class="header_bottom">
+      <div class="header_bottom_select">
+        <select (change)="onChange($event.target.value)" [(ngModel)]="searchCategory">
+          <option *ngFor="let arr of myArr" >{{arr.category}}</option>
+        </select>
+      </div>
+
+      <div class="header_bottom_input_filter">
+        <div class="header_bottom_input">
+          <input type="text" placeholder="Type news category..." [(ngModel)]="searchCategory"> 
+        </div>
+        <div class="header_bottom_filter">
+          <button (click)="addArticleMethod">Filter</button>
+        </div>
+      </div>
+
+      <div class="header_bottom_add_button">
+        <button >Add Article</button>
+      </div>
+    </div>
+  </div>
+
+  <ul>
+    <li *ngFor="let arr of myArr | search:searchCategory">
+      <div class="newsline">
+        <div class="newsline_img_desc">
+            <img class="img_news" src="{{ arr.photo }}">
+            <div class="newsline_desc">
+              <strong>{{ arr.title | uppercase }}</strong>
+              <p class="descr" appShadow>{{ arr.desc }}</p>
+            </div>
+        </div>
+      </div>
+      <a [routerLink]="'/'" (click)="seeMore()">See more...</a>
+    </li>
+  </ul>
+
+  <router-outlet></router-outlet>
+
+  <div>
+    <h1>{{title}}</h1>
+    <h3>{{description}}</h3>
+  </div>
+
+  <div style="width: 300px;">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="item">Item</label>
+        <input type="text" class="form-control"
+          placeholder="Enter content..." id="item"
+          required [(ngModel)]="itemValue" name="item">
+      </div>
+
+      <div class="btn-group">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <h2>Content from Firebase</h2>
+    <div class="col-md-3">
+      <pre *ngFor="let item of items | async">{{item.content}}</pre>
+    </div>
+
+  <div class="control_panel">
+    <div *ngFor='let item of keysTodos; let i = index' class="container">
+      <div class="box">
+        <p>Number:{{i}}</p>
+        <p>Key: {{item.key}}</p>
+        <p>Desc: {{item.payload.val().content}} </p>
+        <p>Status: {{item.payload.val().done}} </p>
+      </div>
+    </div>
+  </div>
+        
+  <div class="control_panel">Count: {{countTodos}}</div>
+
+  <div class="control_panel">
+    <input type="text" name="todo" id="todo" placeholder="Your News" #todo>
+    <input type="submit" value="Get News By Id" class="submit"
+      (click)="getToDoById(todo.value);">
+    <input type="submit" value="Delete News" class="submit"
+      (click)="deleteTodo(todo.value);">
+    <input type="submit" value="Add News" class="submit"
+      (click)="addTodo(todo.value);">
+  </div>
+</div>
+
+
+  
