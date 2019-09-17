@@ -1,0 +1,27 @@
+th {
+  font-size: 24px;
+}
+
+.choose {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+input {
+  border: 1px solid black;
+  height: 40px;
+  width: 100px;
+}
+
+#wins,
+#losses,
+#ties {
+  font-size: 24px;
+}
+
+.image_center {
+  display: block;
+  margin: 0 auto;
+}
