@@ -1,0 +1,26 @@
+#load_div {
+    display: flex;
+    #load_button {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 40%;
+        height: 50px;
+        background-color: #F8F8F8;
+        color: #000;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    #load_button:hover {
+        background-color: #27A69A;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+    }
+
+
+}

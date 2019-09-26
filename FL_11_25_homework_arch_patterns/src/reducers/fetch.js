@@ -1,0 +1,19 @@
+import { FETCH_USERS} from '../Constants/constants';
+
+const initialState = {
+    users: [],
+}
+
+export function usersFetchReducer(state = initialState, action) {
+    switch(action.type) {
+        case FETCH_USERS:
+            return {
+                ...state,
+                users: action.payload
+            }
+        default: 
+            return state;
+    }
+}
+
+export const getUsers = state => state.users;
